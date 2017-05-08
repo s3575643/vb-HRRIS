@@ -1,0 +1,57 @@
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.customer.resources
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.Resources.resources
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.vbproj.GenerateResource.Cache
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\AppData\Local\Temporary Projects\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.room.resources
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.Resources.resources
+C:\Users\s3575643\documents\visual studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.vbproj.GenerateResource.Cache
+C:\Users\s3575643\Documents\Visual Studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmbooking.resources
+C:\Users\s3575643\Documents\Visual Studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmcustomer.resources
+C:\Users\s3575643\Documents\Visual Studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmNavigation.resources
+C:\Users\s3575643\Documents\Visual Studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmroom.resources
+C:\Users\s3575643\Documents\Visual Studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-HRRIS_Db.accdb
+C:\Users\s3575643\Documents\Visual Studio 2010\Projects\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe.config
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe.config
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.Resources.resources
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.vbproj.GenerateResource.Cache
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmBookingNew.resources
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmCustomerNew.resources
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmRoomNew.resources
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmBookingEdit.resources
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmCustomerEdit.resources
+C:\Users\s3575643\Downloads\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmRoomEdit.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe.config
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.exe
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.xml
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643-Assignment01-HRRIS.pdb
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-HRRIS_Db.accdb
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.exe
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.pdb
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\bin\Debug\s3575643-Assignment01-HRRIS.xml
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmBookingEdit.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmBookingNew.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmCustomerEdit.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmCustomerNew.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmRoomEdit.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.Resources.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\s3575643_Assignment01_HRRIS.frmRoomNew.resources
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\#studies\vb\asm\s3575643-Assignment01-HRRIS\s3575643-Assignment01-HRRIS\obj\x86\Debug\GenerateResource.write.1.tlog

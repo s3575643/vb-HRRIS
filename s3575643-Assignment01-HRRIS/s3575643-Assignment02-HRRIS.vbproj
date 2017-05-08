@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E475AD5-AE55-4ADB-9A25-7B1C3723DE1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>s3575643_Assignment01_HRRIS.My.MyApplication</StartupObject>
+    <RootNamespace>s3575643_Assignment01_HRRIS</RootNamespace>
+    <AssemblyName>s3575643-Assignment01-HRRIS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>s3575643-Assignment01-HRRIS.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>s3575643-Assignment01-HRRIS.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlBreakController.vb" />
+    <Compile Include="Controller.vb" />
+    <Compile Include="ReportController.vb" />
+    <Compile Include="frmBookingEdit.Designer.vb">
+      <DependentUpon>frmBookingEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookingNew.Designer.vb">
+      <DependentUpon>frmBookingNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControlBreakReport.Designer.vb">
+      <DependentUpon>frmControlBreakReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmControlBreakReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerEdit.Designer.vb">
+      <DependentUpon>frmCustomerEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerNew.Designer.vb">
+      <DependentUpon>frmCustomerNew.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.vb">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomEdit.Designer.vb">
+      <DependentUpon>frmRoomEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmRoomNew.Designer.vb">
+      <DependentUpon>frmRoomNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation.vb" />
+    <Compile Include="_s3575643_HRRIS_DbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_s3575643_HRRIS_DbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_s3575643_HRRIS_DbDataSetBook.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_s3575643_HRRIS_DbDataSetBook.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_s3575643_HRRIS_DbDataSetCus.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_s3575643_HRRIS_DbDataSetCus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_s3575643_HRRIS_DbDataSetCus1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_s3575643_HRRIS_DbDataSetCus1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_s3575643_HRRIS_DbDataSetRoom.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_s3575643_HRRIS_DbDataSetRoom.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_s3575643_HRRIS_Db_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_s3575643_HRRIS_Db_DataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBookingEdit.resx">
+      <DependentUpon>frmBookingEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookingNew.resx">
+      <DependentUpon>frmBookingNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlBreakReport.resx">
+      <DependentUpon>frmControlBreakReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerEdit.resx">
+      <DependentUpon>frmCustomerEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerNew.resx">
+      <DependentUpon>frmCustomerNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomEdit.resx">
+      <DependentUpon>frmRoomEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomNew.resx">
+      <DependentUpon>frmRoomNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSet.xsc">
+      <DependentUpon>_s3575643_HRRIS_DbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_s3575643_HRRIS_DbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSet.xss">
+      <DependentUpon>_s3575643_HRRIS_DbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetBook.xsc">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetBook.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetBook.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_s3575643_HRRIS_DbDataSetBook.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetBook.xss">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetBook.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetCus.xsc">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetCus.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetCus.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_s3575643_HRRIS_DbDataSetCus.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetCus.xss">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetCus.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetCus1.xsc">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetCus1.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetCus1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_s3575643_HRRIS_DbDataSetCus1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetCus1.xss">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetCus1.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetRoom.xsc">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetRoom.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetRoom.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_s3575643_HRRIS_DbDataSetRoom.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_s3575643_HRRIS_DbDataSetRoom.xss">
+      <DependentUpon>_s3575643_HRRIS_DbDataSetRoom.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_Db_DataSet.xsc">
+      <DependentUpon>_s3575643_HRRIS_Db_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_s3575643_HRRIS_Db_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_s3575643_HRRIS_Db_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_s3575643_HRRIS_Db_DataSet.xss">
+      <DependentUpon>_s3575643_HRRIS_Db_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
