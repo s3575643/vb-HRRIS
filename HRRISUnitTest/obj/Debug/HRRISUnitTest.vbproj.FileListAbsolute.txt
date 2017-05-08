@@ -1,0 +1,12 @@
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\bin\Debug\HRRISUnitTest.dll
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\bin\Debug\HRRISUnitTest.pdb
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\bin\Debug\HRRISUnitTest.xml
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\bin\Debug\s3575643-Assignment01-HRRIS.exe
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\bin\Debug\s3575643-Assignment01-HRRIS.pdb
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\bin\Debug\s3575643-Assignment01-HRRIS.xml
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\obj\Debug\HRRISUnitTest.vbprojResolveAssemblyReference.cache
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\obj\Debug\HRRISUnitTest.Resources.resources
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\obj\Debug\HRRISUnitTest.vbproj.GenerateResource.Cache
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\obj\Debug\HRRISUnitTest.dll
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\obj\Debug\HRRISUnitTest.xml
+C:\Users\s3575643\Source\Repos\vb-HRRIS\HRRISUnitTest\obj\Debug\HRRISUnitTest.pdb
