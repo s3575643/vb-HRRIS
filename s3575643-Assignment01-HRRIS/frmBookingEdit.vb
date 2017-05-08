@@ -60,22 +60,47 @@ Public Class frmBookingEdit
     'End Sub
 
     Private Sub btnUpdateBooking_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateBooking.Click
-        Try
-            oConnection.Open()
-            Dim oCmd As New OleDbCommand _
-                ("Update booking Set booking_date = '" & CDate(bookdatePicker.Text) & "', room_id = '" & cbRoomID.Text & _
-                 "', customer_id ='" & txtCusID.Text & "' , num_days ='" & txtNumDays.Text & _
-                 "' , num_guests = '" & txtNumGuests.Text & "' , checkin_date = '" & CDate(checkindatePicker.Text) & _
-                 "' , total_price = '" & txttotalPrice.Text & "' , comments = '" & txtCmt.Text & _
-                 "' where booking_id =" & txtBookingId.Text & ";", oConnection)
-            oCmd.ExecuteNonQuery()
-            MsgBox("Record updated.")
-            Me.BookingTableAdapter.Fill(Me._s3575643_HRRIS_DbDataSetBook.booking)
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            oConnection.Close()
-        End Try
+
+        Dim allvalid As Boolean = True
+
+        'Check for empty fields
+        If String.IsNullOrEmpty(cbRoomID.Text) Or String.IsNullOrEmpty(txtCusID.Text) _
+                Or String.IsNullOrEmpty(txtNumDays.Text) Or String.IsNullOrEmpty(txtNumGuests.Text) Then
+            MsgBox("Please do not leave any fields blank!")
+            allvalid = False
+        Else
+
+            If Not IsNumeric(txtNumDays.Text) Or txtNumDays.Text = "0" Then
+                allvalid = False
+                txtNumDays.BackColor = Color.Red
+            End If
+
+            If Not IsNumeric(txtNumGuests.Text) Or txtNumDays.Text = "0" Then
+                allvalid = False
+                txtNumGuests.BackColor = Color.Red
+            End If
+
+            If allvalid = True Then
+
+                Debug.Print("Connection string: " & oConnection.ConnectionString)
+                Try
+                    oConnection.Open()
+                    Dim oCmd As New OleDbCommand _
+                        ("Update booking Set booking_date = '" & CDate(bookdatePicker.Text) & "', room_id = '" & cbRoomID.Text & _
+                         "', customer_id ='" & txtCusID.Text & "' , num_days ='" & txtNumDays.Text & _
+                         "' , num_guests = '" & txtNumGuests.Text & "' , checkin_date = '" & CDate(checkindatePicker.Text) & _
+                         "' , total_price = '" & txttotalPrice.Text & "' , comments = '" & txtCmt.Text & _
+                         "' where booking_id =" & txtBookingId.Text & ";", oConnection)
+                    oCmd.ExecuteNonQuery()
+                    MsgBox("Record updated.")
+                    Me.BookingTableAdapter.Fill(Me._s3575643_HRRIS_DbDataSetBook.booking)
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    oConnection.Close()
+                End Try
+            End If
+        End If
     End Sub
 
     Private Sub btnDelCus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelCus.Click

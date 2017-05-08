@@ -11,6 +11,7 @@ Imports System.IO
 
 Public Class frmCustomerEdit
 
+    Dim oValidation As New Validation
     Dim oConnection As New OleDbConnection(Controller.CONNECTION_STRING)
 
     Private Sub frmCustomerEdit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -41,22 +42,62 @@ Public Class frmCustomerEdit
         'Catch ex As Exception
         '    MsgBox(ex.Message)
         'End Try
+        Dim allvalid As Boolean = True
 
-        Try
-            oConnection.Open()
-            Dim oCmd As New OleDbCommand _
-                ("Update customer Set title = '" & cbTitle.Text & "', gender = '" & txtGender.Text & _
-                 "', firstname ='" & txtFirstname.Text & "' , lastname ='" & txtLastname.Text & _
-                 "' , phone = '" & txtPhone.Text & "' , address = '" & txtAddress.Text & "' , email = '" & txtEmail.Text & _
-                 "' , dob = '" & CDate(dobPicker.Text) & "' where customer_id=" & txtCusId.Text & ";", oConnection)
-            oCmd.ExecuteNonQuery()
-            MsgBox("Record updated.")
-            Me.CustomerTableAdapter1.Fill(Me._s3575643_HRRIS_DbDataSetCus.customer)
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            oConnection.Close()
-        End Try
+        'Check for empty fields
+        If String.IsNullOrEmpty(cbTitle.Text) Or String.IsNullOrEmpty(txtGender.Text) _
+                Or String.IsNullOrEmpty(txtFirstname.Text) Or String.IsNullOrEmpty(txtLastname.Text) _
+                Or String.IsNullOrEmpty(txtPhone.Text) Or String.IsNullOrEmpty(txtAddress.Text) _
+                Or String.IsNullOrEmpty(txtEmail.Text) _
+                Then
+            MsgBox("Please do not leave any fields blank!")
+            allvalid = False
+        Else
+            'use funtion in validation.vb to check fields
+            If oValidation.isAlpha(txtFirstname.Text) = False Then
+                allvalid = False
+                txtFirstname.BackColor = Color.Red
+            End If
+
+            If oValidation.isAlpha(txtLastname.Text) = False Then
+                allvalid = False
+                txtLastname.BackColor = Color.Red
+            End If
+
+            If Not IsNumeric(txtPhone.Text) Then
+                allvalid = False
+                txtPhone.BackColor = Color.Red
+            End If
+
+            If oValidation.isAlphaNumericVal(txtAddress.Text) = False Then
+                allvalid = False
+                txtAddress.BackColor = Color.Red
+            End If
+
+            If oValidation.isEmail(txtEmail.Text) = False Then
+                allvalid = False
+                txtEmail.BackColor = Color.Red
+            End If
+
+            'validate again and insert to hash
+            If allvalid = True Then
+                Try
+                    oConnection.Open()
+                    Dim oCmd As New OleDbCommand _
+                        ("Update customer Set title = '" & cbTitle.Text & "', gender = '" & txtGender.Text & _
+                         "', firstname ='" & txtFirstname.Text & "' , lastname ='" & txtLastname.Text & _
+                         "' , phone = '" & txtPhone.Text & "' , address = '" & txtAddress.Text & "' , email = '" & txtEmail.Text & _
+                         "' , dob = '" & CDate(dobPicker.Text) & "' where customer_id=" & txtCusId.Text & ";", oConnection)
+                    oCmd.ExecuteNonQuery()
+                    MsgBox("Record updated.")
+                    Me.CustomerTableAdapter1.Fill(Me._s3575643_HRRIS_DbDataSetCus.customer)
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    oConnection.Close()
+                End Try
+            End If
+        End If
     End Sub
 
     Private Sub btnDelCus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelCus.Click

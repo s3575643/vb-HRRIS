@@ -20,20 +20,57 @@ Public Class frmRoomEdit
     End Sub
 
     Private Sub btnUpdateRoom_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnUpdateRoom.Click
-        Try
-            oConnection.Open()
-            Dim oCmd As New OleDbCommand _
-                ("Update room Set room_number = '" & txtRoomNum.Text & "', type = '" & cbType.Text & _
-                 "', availability ='" & chkAvail.CheckState & "' , floor ='" & txtFloor.Text & _
-                 "' , description = '" & txtDescript.Text & "' where room_id =" & txtRoomId.Text & ";", oConnection)
-            oCmd.ExecuteNonQuery()
-            MsgBox("Record updated.")
-            Me.RoomTableAdapter.Fill(Me._s3575643_HRRIS_DbDataSetRoom.room)
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            oConnection.Close()
-        End Try
+
+        Dim allvalid As Boolean = True
+
+        'Check for empty fields
+        If String.IsNullOrEmpty(txtRoomNum.Text) Or String.IsNullOrEmpty(cbType.Text) _
+                Or String.IsNullOrEmpty(txtPrice.Text) Or String.IsNullOrEmpty(txtNumBeds.Text) _
+                Or String.IsNullOrEmpty(txtFloor.Text) Then
+            MsgBox("Please do not leave any fields blank!")
+            allvalid = False
+        Else
+            'Check fields that must be numbers
+            'Assume only single beds
+            If Not IsNumeric(txtNumBeds.Text) Then
+                allvalid = False
+                txtNumBeds.BackColor = Color.Red
+            End If
+
+            If Not IsNumeric(txtFloor.Text) Then
+                allvalid = False
+                txtFloor.BackColor = Color.Red
+            End If
+
+            If IsNumeric(txtRoomNum.Text) = False Then
+                allvalid = False
+                txtRoomNum.BackColor = Color.Red
+            End If
+
+            If Not IsNumeric(txtPrice.Text) Then
+                allvalid = False
+                txtPrice.BackColor = Color.Red
+            End If
+
+            'validate again and insert to hash
+            If allvalid = True Then
+
+                Try
+                    oConnection.Open()
+                    Dim oCmd As New OleDbCommand _
+                        ("Update room Set room_number = '" & txtRoomNum.Text & "', type = '" & cbType.Text & _
+                         "', availability ='" & chkAvail.CheckState & "' , floor ='" & txtFloor.Text & _
+                         "' , description = '" & txtDescript.Text & "' where room_id =" & txtRoomId.Text & ";", oConnection)
+                    oCmd.ExecuteNonQuery()
+                    MsgBox("Record updated.")
+                    Me.RoomTableAdapter.Fill(Me._s3575643_HRRIS_DbDataSetRoom.room)
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    oConnection.Close()
+                End Try
+            End If
+        End If
     End Sub
 
     Private Sub btnDelRoom_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelRoom.Click
