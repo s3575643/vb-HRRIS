@@ -67,7 +67,7 @@ Partial Class frmBookingNew
         Me.btnCancel.Location = New System.Drawing.Point(111, 417)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(145, 25)
-        Me.btnCancel.TabIndex = 9
+        Me.btnCancel.TabIndex = 10
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -76,7 +76,7 @@ Partial Class frmBookingNew
         Me.btnSave.Location = New System.Drawing.Point(39, 386)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(290, 25)
-        Me.btnSave.TabIndex = 8
+        Me.btnSave.TabIndex = 9
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
@@ -192,7 +192,7 @@ Partial Class frmBookingNew
         Me.txttotalPrice.Name = "txttotalPrice"
         Me.txttotalPrice.ReadOnly = True
         Me.txttotalPrice.Size = New System.Drawing.Size(196, 20)
-        Me.txttotalPrice.TabIndex = 24
+        Me.txttotalPrice.TabIndex = 7
         '
         'txtCusID
         '
@@ -217,14 +217,14 @@ Partial Class frmBookingNew
         Me.txtCmt.Multiline = True
         Me.txtCmt.Name = "txtCmt"
         Me.txtCmt.Size = New System.Drawing.Size(196, 60)
-        Me.txtCmt.TabIndex = 7
+        Me.txtCmt.TabIndex = 8
         '
         'MenuStrip1
         '
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.EditToolStripMenuItem, Me.ReportToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(370, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(360, 24)
         Me.MenuStrip1.TabIndex = 36
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -295,7 +295,7 @@ Partial Class frmBookingNew
         'GeneralReportsToolStripMenuItem
         '
         Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
-        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(189, 22)
+        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
         Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
         '
         'ControlBreakReportsToolStripMenuItem
@@ -341,7 +341,7 @@ Partial Class frmBookingNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 468)
+        Me.ClientSize = New System.Drawing.Size(360, 458)
         Me.Controls.Add(Me.txtCmt)
         Me.Controls.Add(Me.bookdatePicker)
         Me.Controls.Add(Me.btnCancel)

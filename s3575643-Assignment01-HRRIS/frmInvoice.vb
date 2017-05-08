@@ -89,7 +89,7 @@ Public Class frmInvoice
             If allvalid = True Then
                 Debug.Print("Connection string: " & oConnection.ConnectionString)
 
-                oConnection.Open()
+                'oConnection.Open()
                 oCommand.Connection = oConnection
 
                 Dim htData As Hashtable = New Hashtable
@@ -99,7 +99,7 @@ Public Class frmInvoice
 
                 Dim oInvoiceController As Controller = New Controller
                 oInvoiceController.InvoiceController(htData)
-
+                'oConnection.Close()
 
             Else : MsgBox("Invoice not recorded due to invalid input! Please check again.")
             End If

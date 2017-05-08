@@ -33,6 +33,8 @@ Partial Class frmRoomEdit
         Me.RoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.editBookingToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeneralReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ControlBreakReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -73,8 +75,6 @@ Partial Class frmRoomEdit
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnLast = New System.Windows.Forms.Button()
         Me.btnFirst = New System.Windows.Forms.Button()
-        Me.GeneralReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ControlBreakReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.editRoomGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RoomBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,6 +147,18 @@ Partial Class frmRoomEdit
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReportToolStripMenuItem.Text = "Report"
+        '
+        'GeneralReportsToolStripMenuItem
+        '
+        Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
+        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
+        '
+        'ControlBreakReportsToolStripMenuItem
+        '
+        Me.ControlBreakReportsToolStripMenuItem.Name = "ControlBreakReportsToolStripMenuItem"
+        Me.ControlBreakReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.ControlBreakReportsToolStripMenuItem.Text = "Summary Reports"
         '
         'AboutToolStripMenuItem
         '
@@ -245,7 +257,7 @@ Partial Class frmRoomEdit
         Me.btnUpdateRoom.Location = New System.Drawing.Point(380, 400)
         Me.btnUpdateRoom.Name = "btnUpdateRoom"
         Me.btnUpdateRoom.Size = New System.Drawing.Size(75, 23)
-        Me.btnUpdateRoom.TabIndex = 54
+        Me.btnUpdateRoom.TabIndex = 13
         Me.btnUpdateRoom.Text = "Update"
         Me.btnUpdateRoom.UseVisualStyleBackColor = True
         '
@@ -265,7 +277,7 @@ Partial Class frmRoomEdit
         Me.txtRoomId.Name = "txtRoomId"
         Me.txtRoomId.ReadOnly = True
         Me.txtRoomId.Size = New System.Drawing.Size(80, 20)
-        Me.txtRoomId.TabIndex = 56
+        Me.txtRoomId.TabIndex = 5
         '
         'chkAvail
         '
@@ -274,7 +286,7 @@ Partial Class frmRoomEdit
         Me.chkAvail.Location = New System.Drawing.Point(140, 231)
         Me.chkAvail.Name = "chkAvail"
         Me.chkAvail.Size = New System.Drawing.Size(15, 14)
-        Me.chkAvail.TabIndex = 61
+        Me.chkAvail.TabIndex = 10
         Me.chkAvail.UseVisualStyleBackColor = True
         '
         'txtRoomNum
@@ -283,7 +295,7 @@ Partial Class frmRoomEdit
         Me.txtRoomNum.Location = New System.Drawing.Point(140, 76)
         Me.txtRoomNum.Name = "txtRoomNum"
         Me.txtRoomNum.Size = New System.Drawing.Size(81, 20)
-        Me.txtRoomNum.TabIndex = 57
+        Me.txtRoomNum.TabIndex = 6
         '
         'cbType
         '
@@ -294,7 +306,7 @@ Partial Class frmRoomEdit
         Me.cbType.Location = New System.Drawing.Point(140, 115)
         Me.cbType.Name = "cbType"
         Me.cbType.Size = New System.Drawing.Size(81, 21)
-        Me.cbType.TabIndex = 58
+        Me.cbType.TabIndex = 7
         '
         'lblRoom_Num
         '
@@ -365,7 +377,7 @@ Partial Class frmRoomEdit
         Me.txtFloor.Location = New System.Drawing.Point(140, 264)
         Me.txtFloor.Name = "txtFloor"
         Me.txtFloor.Size = New System.Drawing.Size(81, 20)
-        Me.txtFloor.TabIndex = 62
+        Me.txtFloor.TabIndex = 11
         '
         'txtNumBeds
         '
@@ -373,7 +385,7 @@ Partial Class frmRoomEdit
         Me.txtNumBeds.Location = New System.Drawing.Point(140, 191)
         Me.txtNumBeds.Name = "txtNumBeds"
         Me.txtNumBeds.Size = New System.Drawing.Size(81, 20)
-        Me.txtNumBeds.TabIndex = 60
+        Me.txtNumBeds.TabIndex = 9
         '
         'txtDescript
         '
@@ -382,7 +394,7 @@ Partial Class frmRoomEdit
         Me.txtDescript.Multiline = True
         Me.txtDescript.Name = "txtDescript"
         Me.txtDescript.Size = New System.Drawing.Size(196, 60)
-        Me.txtDescript.TabIndex = 63
+        Me.txtDescript.TabIndex = 12
         '
         'txtPrice
         '
@@ -390,14 +402,14 @@ Partial Class frmRoomEdit
         Me.txtPrice.Location = New System.Drawing.Point(140, 154)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(196, 20)
-        Me.txtPrice.TabIndex = 59
+        Me.txtPrice.TabIndex = 8
         '
         'btnDelRoom
         '
         Me.btnDelRoom.Location = New System.Drawing.Point(480, 400)
         Me.btnDelRoom.Name = "btnDelRoom"
         Me.btnDelRoom.Size = New System.Drawing.Size(75, 23)
-        Me.btnDelRoom.TabIndex = 71
+        Me.btnDelRoom.TabIndex = 14
         Me.btnDelRoom.Text = "Delete"
         Me.btnDelRoom.UseVisualStyleBackColor = True
         '
@@ -406,7 +418,7 @@ Partial Class frmRoomEdit
         Me.btnSearch.Location = New System.Drawing.Point(976, 400)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearch.TabIndex = 73
+        Me.btnSearch.TabIndex = 16
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
@@ -415,14 +427,14 @@ Partial Class frmRoomEdit
         Me.txtSearch.Location = New System.Drawing.Point(748, 400)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(210, 20)
-        Me.txtSearch.TabIndex = 72
+        Me.txtSearch.TabIndex = 15
         '
         'btnRefresh
         '
         Me.btnRefresh.Location = New System.Drawing.Point(1069, 400)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
-        Me.btnRefresh.TabIndex = 74
+        Me.btnRefresh.TabIndex = 17
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
@@ -431,7 +443,7 @@ Partial Class frmRoomEdit
         Me.btnPrev.Location = New System.Drawing.Point(121, 400)
         Me.btnPrev.Name = "btnPrev"
         Me.btnPrev.Size = New System.Drawing.Size(50, 23)
-        Me.btnPrev.TabIndex = 78
+        Me.btnPrev.TabIndex = 2
         Me.btnPrev.Text = "<"
         Me.btnPrev.UseVisualStyleBackColor = True
         '
@@ -440,7 +452,7 @@ Partial Class frmRoomEdit
         Me.btnNext.Location = New System.Drawing.Point(201, 400)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(50, 23)
-        Me.btnNext.TabIndex = 77
+        Me.btnNext.TabIndex = 3
         Me.btnNext.Text = ">"
         Me.btnNext.UseVisualStyleBackColor = True
         '
@@ -449,7 +461,7 @@ Partial Class frmRoomEdit
         Me.btnLast.Location = New System.Drawing.Point(282, 400)
         Me.btnLast.Name = "btnLast"
         Me.btnLast.Size = New System.Drawing.Size(50, 23)
-        Me.btnLast.TabIndex = 76
+        Me.btnLast.TabIndex = 4
         Me.btnLast.Text = ">|"
         Me.btnLast.UseVisualStyleBackColor = True
         '
@@ -458,21 +470,9 @@ Partial Class frmRoomEdit
         Me.btnFirst.Location = New System.Drawing.Point(42, 400)
         Me.btnFirst.Name = "btnFirst"
         Me.btnFirst.Size = New System.Drawing.Size(50, 23)
-        Me.btnFirst.TabIndex = 75
+        Me.btnFirst.TabIndex = 1
         Me.btnFirst.Text = "|<"
         Me.btnFirst.UseVisualStyleBackColor = True
-        '
-        'GeneralReportsToolStripMenuItem
-        '
-        Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
-        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
-        Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
-        '
-        'ControlBreakReportsToolStripMenuItem
-        '
-        Me.ControlBreakReportsToolStripMenuItem.Name = "ControlBreakReportsToolStripMenuItem"
-        Me.ControlBreakReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
-        Me.ControlBreakReportsToolStripMenuItem.Text = "Summary Reports"
         '
         'frmRoomEdit
         '

@@ -186,7 +186,7 @@ Partial Class frmReport
         Me.cbMonthRp3.Location = New System.Drawing.Point(140, 62)
         Me.cbMonthRp3.Name = "cbMonthRp3"
         Me.cbMonthRp3.Size = New System.Drawing.Size(150, 21)
-        Me.cbMonthRp3.TabIndex = 3
+        Me.cbMonthRp3.TabIndex = 4
         '
         'btnCreateReport3
         '
@@ -211,7 +211,7 @@ Partial Class frmReport
         Me.cbCusidRp3.Location = New System.Drawing.Point(140, 32)
         Me.cbCusidRp3.Name = "cbCusidRp3"
         Me.cbCusidRp3.Size = New System.Drawing.Size(150, 21)
-        Me.cbCusidRp3.TabIndex = 4
+        Me.cbCusidRp3.TabIndex = 3
         '
         'lblDateMonthRp3
         '
@@ -263,7 +263,7 @@ Partial Class frmReport
         Me.tabPage4.Padding = New System.Windows.Forms.Padding(3)
         Me.tabPage4.Size = New System.Drawing.Size(332, 184)
         Me.tabPage4.TabIndex = 0
-        Me.tabPage4.Text = "Number of Bookings"
+        Me.tabPage4.Text = "Bookings in a Month"
         Me.tabPage4.UseVisualStyleBackColor = True
         '
         'cbMonthRp4
@@ -394,7 +394,7 @@ Partial Class frmReport
         Me.cbMonthRp6.Location = New System.Drawing.Point(140, 59)
         Me.cbMonthRp6.Name = "cbMonthRp6"
         Me.cbMonthRp6.Size = New System.Drawing.Size(150, 21)
-        Me.cbMonthRp6.TabIndex = 16
+        Me.cbMonthRp6.TabIndex = 17
         '
         'txtYearRp6
         '
@@ -410,7 +410,7 @@ Partial Class frmReport
         Me.cbRoomNumRp6.Location = New System.Drawing.Point(140, 29)
         Me.cbRoomNumRp6.Name = "cbRoomNumRp6"
         Me.cbRoomNumRp6.Size = New System.Drawing.Size(150, 21)
-        Me.cbRoomNumRp6.TabIndex = 17
+        Me.cbRoomNumRp6.TabIndex = 16
         '
         'lblDateMonthRp6
         '
@@ -444,7 +444,7 @@ Partial Class frmReport
         Me.btnCreateReport6.Location = New System.Drawing.Point(115, 135)
         Me.btnCreateReport6.Name = "btnCreateReport6"
         Me.btnCreateReport6.Size = New System.Drawing.Size(100, 25)
-        Me.btnCreateReport6.TabIndex = 12
+        Me.btnCreateReport6.TabIndex = 19
         Me.btnCreateReport6.Text = "Create Report"
         Me.btnCreateReport6.UseVisualStyleBackColor = True
         '
@@ -452,7 +452,7 @@ Partial Class frmReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 468)
+        Me.ClientSize = New System.Drawing.Size(360, 458)
         Me.Controls.Add(Me.tabReport2)
         Me.Controls.Add(Me.tabReport1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D

@@ -79,29 +79,35 @@ Public Class frmBookingNew
 
             'validate again and insert to hash
             If allvalid = True Then
+                Try
+                    Debug.Print("Connection string: " & oConnection.ConnectionString)
 
-                Debug.Print("Connection string: " & oConnection.ConnectionString)
+                    oConnection.Open()
+                    oCommand.Connection = oConnection
 
-                oConnection.Open()
-                oCommand.Connection = oConnection
+                    Dim htData As Hashtable = New Hashtable
+                    htData("bookdate") = bookdatePicker.Text
+                    htData("roomid") = cbRoomID.SelectedValue
+                    htData("cusid") = txtCusID.Text
+                    htData("numdays") = txtNumDays.Text
+                    htData("numguests") = txtNumGuests.Text
+                    htData("checkindate") = checkindatePicker.Text
+                    htData("totalprice") = txttotalPrice.Text
+                    htData("cmt") = txtCmt.Text
 
-                Dim htData As Hashtable = New Hashtable
-                htData("bookdate") = bookdatePicker.Text
-                htData("roomid") = cbRoomID.SelectedValue
-                htData("cusid") = txtCusID.Text
-                htData("numdays") = txtNumDays.Text
-                htData("numguests") = txtNumGuests.Text
-                htData("checkindate") = checkindatePicker.Text
-                htData("totalprice") = txttotalPrice.Text
-                htData("cmt") = txtCmt.Text
+                    Dim oBookingController As Controller = New Controller
+                    oBookingController.BookingController(htData)
 
-                Dim oBookingController As Controller = New Controller
-                oBookingController.BookingController(htData)
+                    MsgBox("Your booking has been recorded. Thank you for your reservation.")
+                Catch ex As Exception
+                    MsgBox(ex.Message & "Record not inserted due to invalid input! Please check again.")
+                Finally
+                    oConnection.Close()
+                End Try
 
-                MsgBox("Your booking has been recorded. Thank you for your reservation.")
-            Else : MsgBox("Record not inserted due to invalid input! Please check again.")
             End If
         End If
+
 
     End Sub
 

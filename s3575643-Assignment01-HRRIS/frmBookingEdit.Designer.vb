@@ -51,6 +51,8 @@ Partial Class frmBookingEdit
         Me.RoomToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BookingToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeneralReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ControlBreakReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewHelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -77,8 +79,6 @@ Partial Class frmBookingEdit
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnPrev = New System.Windows.Forms.Button()
         Me.BookingTableAdapter = New s3575643_Assignment01_HRRIS._s3575643_HRRIS_DbDataSetBookTableAdapters.bookingTableAdapter()
-        Me.GeneralReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ControlBreakReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.BookingBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._s3575643_HRRIS_DbDataSetBook, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -92,7 +92,7 @@ Partial Class frmBookingEdit
         Me.txtCmt.Multiline = True
         Me.txtCmt.Name = "txtCmt"
         Me.txtCmt.Size = New System.Drawing.Size(196, 60)
-        Me.txtCmt.TabIndex = 43
+        Me.txtCmt.TabIndex = 9
         '
         'BookingBindingSource
         '
@@ -110,7 +110,7 @@ Partial Class frmBookingEdit
         Me.bookdatePicker.Location = New System.Drawing.Point(135, 76)
         Me.bookdatePicker.Name = "bookdatePicker"
         Me.bookdatePicker.Size = New System.Drawing.Size(196, 20)
-        Me.bookdatePicker.TabIndex = 36
+        Me.bookdatePicker.TabIndex = 2
         '
         'checkindatePicker
         '
@@ -119,7 +119,7 @@ Partial Class frmBookingEdit
         Me.checkindatePicker.MinDate = New Date(2017, 3, 31, 0, 0, 0, 0)
         Me.checkindatePicker.Name = "checkindatePicker"
         Me.checkindatePicker.Size = New System.Drawing.Size(196, 20)
-        Me.checkindatePicker.TabIndex = 41
+        Me.checkindatePicker.TabIndex = 7
         '
         'lblBookDate
         '
@@ -199,7 +199,7 @@ Partial Class frmBookingEdit
         Me.txtNumGuests.Location = New System.Drawing.Point(135, 231)
         Me.txtNumGuests.Name = "txtNumGuests"
         Me.txtNumGuests.Size = New System.Drawing.Size(81, 20)
-        Me.txtNumGuests.TabIndex = 40
+        Me.txtNumGuests.TabIndex = 6
         '
         'txtNumDays
         '
@@ -207,7 +207,7 @@ Partial Class frmBookingEdit
         Me.txtNumDays.Location = New System.Drawing.Point(135, 194)
         Me.txtNumDays.Name = "txtNumDays"
         Me.txtNumDays.Size = New System.Drawing.Size(81, 20)
-        Me.txtNumDays.TabIndex = 39
+        Me.txtNumDays.TabIndex = 5
         '
         'txttotalPrice
         '
@@ -216,7 +216,7 @@ Partial Class frmBookingEdit
         Me.txttotalPrice.Name = "txttotalPrice"
         Me.txttotalPrice.ReadOnly = True
         Me.txttotalPrice.Size = New System.Drawing.Size(196, 20)
-        Me.txttotalPrice.TabIndex = 42
+        Me.txttotalPrice.TabIndex = 8
         '
         'txtCusID
         '
@@ -225,7 +225,7 @@ Partial Class frmBookingEdit
         Me.txtCusID.Location = New System.Drawing.Point(135, 157)
         Me.txtCusID.Name = "txtCusID"
         Me.txtCusID.Size = New System.Drawing.Size(196, 20)
-        Me.txtCusID.TabIndex = 38
+        Me.txtCusID.TabIndex = 4
         '
         'MenuStrip1
         '
@@ -300,6 +300,18 @@ Partial Class frmBookingEdit
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReportToolStripMenuItem.Text = "Report"
         '
+        'GeneralReportsToolStripMenuItem
+        '
+        Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
+        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
+        '
+        'ControlBreakReportsToolStripMenuItem
+        '
+        Me.ControlBreakReportsToolStripMenuItem.Name = "ControlBreakReportsToolStripMenuItem"
+        Me.ControlBreakReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.ControlBreakReportsToolStripMenuItem.Text = "Summary Reports"
+        '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ViewHelpToolStripMenuItem, Me.AboutToolStripMenuItem})
@@ -324,7 +336,7 @@ Partial Class frmBookingEdit
         Me.btnUpdateBooking.Location = New System.Drawing.Point(380, 419)
         Me.btnUpdateBooking.Name = "btnUpdateBooking"
         Me.btnUpdateBooking.Size = New System.Drawing.Size(75, 23)
-        Me.btnUpdateBooking.TabIndex = 53
+        Me.btnUpdateBooking.TabIndex = 10
         Me.btnUpdateBooking.Text = "Update"
         Me.btnUpdateBooking.UseVisualStyleBackColor = True
         '
@@ -412,7 +424,7 @@ Partial Class frmBookingEdit
         Me.cbRoomID.Location = New System.Drawing.Point(135, 113)
         Me.cbRoomID.Name = "cbRoomID"
         Me.cbRoomID.Size = New System.Drawing.Size(196, 21)
-        Me.cbRoomID.TabIndex = 55
+        Me.cbRoomID.TabIndex = 3
         Me.cbRoomID.ValueMember = "room_id"
         '
         'btnRefresh
@@ -420,7 +432,7 @@ Partial Class frmBookingEdit
         Me.btnRefresh.Location = New System.Drawing.Point(1071, 419)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
-        Me.btnRefresh.TabIndex = 59
+        Me.btnRefresh.TabIndex = 14
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
@@ -429,7 +441,7 @@ Partial Class frmBookingEdit
         Me.btnSearch.Location = New System.Drawing.Point(976, 419)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearch.TabIndex = 58
+        Me.btnSearch.TabIndex = 13
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
@@ -438,14 +450,14 @@ Partial Class frmBookingEdit
         Me.txtSearch.Location = New System.Drawing.Point(734, 421)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(220, 20)
-        Me.txtSearch.TabIndex = 57
+        Me.txtSearch.TabIndex = 12
         '
         'btnDelCus
         '
         Me.btnDelCus.Location = New System.Drawing.Point(480, 419)
         Me.btnDelCus.Name = "btnDelCus"
         Me.btnDelCus.Size = New System.Drawing.Size(75, 23)
-        Me.btnDelCus.TabIndex = 56
+        Me.btnDelCus.TabIndex = 11
         Me.btnDelCus.Text = "Delete"
         Me.btnDelCus.UseVisualStyleBackColor = True
         '
@@ -466,14 +478,14 @@ Partial Class frmBookingEdit
         Me.txtBookingId.Name = "txtBookingId"
         Me.txtBookingId.ReadOnly = True
         Me.txtBookingId.Size = New System.Drawing.Size(196, 20)
-        Me.txtBookingId.TabIndex = 60
+        Me.txtBookingId.TabIndex = 1
         '
         'btnFirst
         '
         Me.btnFirst.Location = New System.Drawing.Point(41, 419)
         Me.btnFirst.Name = "btnFirst"
         Me.btnFirst.Size = New System.Drawing.Size(50, 23)
-        Me.btnFirst.TabIndex = 62
+        Me.btnFirst.TabIndex = 1
         Me.btnFirst.Text = "|<"
         Me.btnFirst.UseVisualStyleBackColor = True
         '
@@ -482,7 +494,7 @@ Partial Class frmBookingEdit
         Me.btnLast.Location = New System.Drawing.Point(281, 419)
         Me.btnLast.Name = "btnLast"
         Me.btnLast.Size = New System.Drawing.Size(50, 23)
-        Me.btnLast.TabIndex = 63
+        Me.btnLast.TabIndex = 14
         Me.btnLast.Text = ">|"
         Me.btnLast.UseVisualStyleBackColor = True
         '
@@ -491,7 +503,7 @@ Partial Class frmBookingEdit
         Me.btnNext.Location = New System.Drawing.Point(202, 419)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(50, 23)
-        Me.btnNext.TabIndex = 64
+        Me.btnNext.TabIndex = 13
         Me.btnNext.Text = ">"
         Me.btnNext.UseVisualStyleBackColor = True
         '
@@ -500,25 +512,13 @@ Partial Class frmBookingEdit
         Me.btnPrev.Location = New System.Drawing.Point(123, 419)
         Me.btnPrev.Name = "btnPrev"
         Me.btnPrev.Size = New System.Drawing.Size(50, 23)
-        Me.btnPrev.TabIndex = 65
+        Me.btnPrev.TabIndex = 2
         Me.btnPrev.Text = "<"
         Me.btnPrev.UseVisualStyleBackColor = True
         '
         'BookingTableAdapter
         '
         Me.BookingTableAdapter.ClearBeforeFill = True
-        '
-        'GeneralReportsToolStripMenuItem
-        '
-        Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
-        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
-        Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
-        '
-        'ControlBreakReportsToolStripMenuItem
-        '
-        Me.ControlBreakReportsToolStripMenuItem.Name = "ControlBreakReportsToolStripMenuItem"
-        Me.ControlBreakReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
-        Me.ControlBreakReportsToolStripMenuItem.Text = "Summary Reports"
         '
         'frmBookingEdit
         '

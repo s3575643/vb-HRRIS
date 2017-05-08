@@ -33,6 +33,8 @@ Partial Class frmCustomerEdit
         Me.RoomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BookingToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeneralReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ControlBreakReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -77,8 +79,6 @@ Partial Class frmCustomerEdit
         Me.btnNext = New System.Windows.Forms.Button()
         Me.btnLast = New System.Windows.Forms.Button()
         Me.btnFirst = New System.Windows.Forms.Button()
-        Me.GeneralReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ControlBreakReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.CustomerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._s3575643_HRRIS_DbDataSetCus, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,19 +104,19 @@ Partial Class frmCustomerEdit
         'newCusToolStripMenuItem
         '
         Me.newCusToolStripMenuItem.Name = "newCusToolStripMenuItem"
-        Me.newCusToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.newCusToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.newCusToolStripMenuItem.Text = "Customer"
         '
         'newRoomToolStripMenuItem1
         '
         Me.newRoomToolStripMenuItem1.Name = "newRoomToolStripMenuItem1"
-        Me.newRoomToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.newRoomToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
         Me.newRoomToolStripMenuItem1.Text = "Room"
         '
         'newBookingToolStripMenuItem1
         '
         Me.newBookingToolStripMenuItem1.Name = "newBookingToolStripMenuItem1"
-        Me.newBookingToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.newBookingToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
         Me.newBookingToolStripMenuItem1.Text = "Booking"
         '
         'DataCaptureToolStripMenuItem
@@ -130,19 +130,19 @@ Partial Class frmCustomerEdit
         '
         Me.BookingToolStripMenuItem.Enabled = False
         Me.BookingToolStripMenuItem.Name = "BookingToolStripMenuItem"
-        Me.BookingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BookingToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.BookingToolStripMenuItem.Text = "Customer"
         '
         'RoomToolStripMenuItem
         '
         Me.RoomToolStripMenuItem.Name = "RoomToolStripMenuItem"
-        Me.RoomToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.RoomToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.RoomToolStripMenuItem.Text = "Room"
         '
         'BookingToolStripMenuItem2
         '
         Me.BookingToolStripMenuItem2.Name = "BookingToolStripMenuItem2"
-        Me.BookingToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.BookingToolStripMenuItem2.Size = New System.Drawing.Size(126, 22)
         Me.BookingToolStripMenuItem2.Text = "Booking"
         '
         'ReportToolStripMenuItem
@@ -151,6 +151,18 @@ Partial Class frmCustomerEdit
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReportToolStripMenuItem.Text = "Report"
+        '
+        'GeneralReportsToolStripMenuItem
+        '
+        Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
+        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
+        '
+        'ControlBreakReportsToolStripMenuItem
+        '
+        Me.ControlBreakReportsToolStripMenuItem.Name = "ControlBreakReportsToolStripMenuItem"
+        Me.ControlBreakReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
+        Me.ControlBreakReportsToolStripMenuItem.Text = "Summary Reports"
         '
         'AboutToolStripMenuItem
         '
@@ -162,13 +174,13 @@ Partial Class frmCustomerEdit
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.HelpToolStripMenuItem.Text = "View Help"
         '
         'AboutToolStripMenuItem1
         '
         Me.AboutToolStripMenuItem1.Name = "AboutToolStripMenuItem1"
-        Me.AboutToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem1.Size = New System.Drawing.Size(127, 22)
         Me.AboutToolStripMenuItem1.Text = "About"
         '
         'dobPicker
@@ -178,7 +190,7 @@ Partial Class frmCustomerEdit
         Me.dobPicker.MaxDate = New Date(2017, 3, 31, 0, 0, 0, 0)
         Me.dobPicker.Name = "dobPicker"
         Me.dobPicker.Size = New System.Drawing.Size(196, 20)
-        Me.dobPicker.TabIndex = 27
+        Me.dobPicker.TabIndex = 47
         Me.dobPicker.Value = New Date(2017, 3, 31, 0, 0, 0, 0)
         '
         'CustomerBindingSource
@@ -197,7 +209,7 @@ Partial Class frmCustomerEdit
         Me.txtEmail.Location = New System.Drawing.Point(139, 328)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(196, 20)
-        Me.txtEmail.TabIndex = 26
+        Me.txtEmail.TabIndex = 46
         '
         'txtAddress
         '
@@ -205,7 +217,7 @@ Partial Class frmCustomerEdit
         Me.txtAddress.Location = New System.Drawing.Point(139, 288)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(196, 20)
-        Me.txtAddress.TabIndex = 25
+        Me.txtAddress.TabIndex = 45
         '
         'txtPhone
         '
@@ -213,7 +225,7 @@ Partial Class frmCustomerEdit
         Me.txtPhone.Location = New System.Drawing.Point(139, 248)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(196, 20)
-        Me.txtPhone.TabIndex = 24
+        Me.txtPhone.TabIndex = 44
         '
         'txtLastname
         '
@@ -221,7 +233,7 @@ Partial Class frmCustomerEdit
         Me.txtLastname.Location = New System.Drawing.Point(139, 207)
         Me.txtLastname.Name = "txtLastname"
         Me.txtLastname.Size = New System.Drawing.Size(196, 20)
-        Me.txtLastname.TabIndex = 23
+        Me.txtLastname.TabIndex = 43
         '
         'txtFirstname
         '
@@ -229,7 +241,7 @@ Partial Class frmCustomerEdit
         Me.txtFirstname.Location = New System.Drawing.Point(139, 167)
         Me.txtFirstname.Name = "txtFirstname"
         Me.txtFirstname.Size = New System.Drawing.Size(196, 20)
-        Me.txtFirstname.TabIndex = 22
+        Me.txtFirstname.TabIndex = 42
         '
         'txtGender
         '
@@ -238,7 +250,7 @@ Partial Class frmCustomerEdit
         Me.txtGender.Name = "txtGender"
         Me.txtGender.ReadOnly = True
         Me.txtGender.Size = New System.Drawing.Size(80, 20)
-        Me.txtGender.TabIndex = 21
+        Me.txtGender.TabIndex = 41
         '
         'cbTitle
         '
@@ -250,7 +262,7 @@ Partial Class frmCustomerEdit
         Me.cbTitle.Location = New System.Drawing.Point(139, 87)
         Me.cbTitle.Name = "cbTitle"
         Me.cbTitle.Size = New System.Drawing.Size(80, 21)
-        Me.cbTitle.TabIndex = 20
+        Me.cbTitle.TabIndex = 40
         '
         'lblTitle
         '
@@ -412,7 +424,7 @@ Partial Class frmCustomerEdit
         Me.btnUpdateCus.Location = New System.Drawing.Point(380, 415)
         Me.btnUpdateCus.Name = "btnUpdateCus"
         Me.btnUpdateCus.Size = New System.Drawing.Size(75, 23)
-        Me.btnUpdateCus.TabIndex = 37
+        Me.btnUpdateCus.TabIndex = 48
         Me.btnUpdateCus.Text = "Update"
         Me.btnUpdateCus.UseVisualStyleBackColor = True
         '
@@ -439,7 +451,7 @@ Partial Class frmCustomerEdit
         Me.btnDelCus.Location = New System.Drawing.Point(480, 415)
         Me.btnDelCus.Name = "btnDelCus"
         Me.btnDelCus.Size = New System.Drawing.Size(75, 23)
-        Me.btnDelCus.TabIndex = 40
+        Me.btnDelCus.TabIndex = 49
         Me.btnDelCus.Text = "Delete"
         Me.btnDelCus.UseVisualStyleBackColor = True
         '
@@ -448,14 +460,14 @@ Partial Class frmCustomerEdit
         Me.txtSearch.Location = New System.Drawing.Point(756, 418)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.Size = New System.Drawing.Size(210, 20)
-        Me.txtSearch.TabIndex = 41
+        Me.txtSearch.TabIndex = 50
         '
         'btnSearch
         '
         Me.btnSearch.Location = New System.Drawing.Point(982, 415)
         Me.btnSearch.Name = "btnSearch"
         Me.btnSearch.Size = New System.Drawing.Size(75, 23)
-        Me.btnSearch.TabIndex = 42
+        Me.btnSearch.TabIndex = 51
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
@@ -464,7 +476,7 @@ Partial Class frmCustomerEdit
         Me.btnRefresh.Location = New System.Drawing.Point(1072, 415)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(75, 23)
-        Me.btnRefresh.TabIndex = 43
+        Me.btnRefresh.TabIndex = 52
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
@@ -473,7 +485,7 @@ Partial Class frmCustomerEdit
         Me.btnPrev.Location = New System.Drawing.Point(123, 415)
         Me.btnPrev.Name = "btnPrev"
         Me.btnPrev.Size = New System.Drawing.Size(50, 23)
-        Me.btnPrev.TabIndex = 69
+        Me.btnPrev.TabIndex = 2
         Me.btnPrev.Text = "<"
         Me.btnPrev.UseVisualStyleBackColor = True
         '
@@ -482,7 +494,7 @@ Partial Class frmCustomerEdit
         Me.btnNext.Location = New System.Drawing.Point(202, 415)
         Me.btnNext.Name = "btnNext"
         Me.btnNext.Size = New System.Drawing.Size(50, 23)
-        Me.btnNext.TabIndex = 68
+        Me.btnNext.TabIndex = 3
         Me.btnNext.Text = ">"
         Me.btnNext.UseVisualStyleBackColor = True
         '
@@ -491,7 +503,7 @@ Partial Class frmCustomerEdit
         Me.btnLast.Location = New System.Drawing.Point(285, 415)
         Me.btnLast.Name = "btnLast"
         Me.btnLast.Size = New System.Drawing.Size(50, 23)
-        Me.btnLast.TabIndex = 67
+        Me.btnLast.TabIndex = 4
         Me.btnLast.Text = ">|"
         Me.btnLast.UseVisualStyleBackColor = True
         '
@@ -500,21 +512,9 @@ Partial Class frmCustomerEdit
         Me.btnFirst.Location = New System.Drawing.Point(41, 415)
         Me.btnFirst.Name = "btnFirst"
         Me.btnFirst.Size = New System.Drawing.Size(50, 23)
-        Me.btnFirst.TabIndex = 66
+        Me.btnFirst.TabIndex = 1
         Me.btnFirst.Text = "|<"
         Me.btnFirst.UseVisualStyleBackColor = True
-        '
-        'GeneralReportsToolStripMenuItem
-        '
-        Me.GeneralReportsToolStripMenuItem.Name = "GeneralReportsToolStripMenuItem"
-        Me.GeneralReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
-        Me.GeneralReportsToolStripMenuItem.Text = "Operational Reports"
-        '
-        'ControlBreakReportsToolStripMenuItem
-        '
-        Me.ControlBreakReportsToolStripMenuItem.Name = "ControlBreakReportsToolStripMenuItem"
-        Me.ControlBreakReportsToolStripMenuItem.Size = New System.Drawing.Size(179, 22)
-        Me.ControlBreakReportsToolStripMenuItem.Text = "Summary Reports"
         '
         'frmCustomerEdit
         '

@@ -95,8 +95,8 @@ Public Class frmReport
     End Sub
 
     Private Sub btnCreateReport2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCreateReport2.Click
-        If cbCusIdRp1.SelectedIndex = -1 Then
-            MsgBox("Please choose a Customer ID to generate the report on.")
+        If cbRoomNumRp2.SelectedIndex = -1 Then
+            MsgBox("Please choose a Room Number to generate the report on.")
         Else
             oController.createReport02(CStr(cbRoomNumRp2.SelectedValue))
         End If

@@ -209,7 +209,7 @@ Public Class ReportController
             Dim oCommand As OleDbCommand = New OleDbCommand
             oCommand.Connection = oConnection
             oCommand.CommandText = _
-                "SELECT customer_id, count(room_id) as NumRoom from booking where customer_id = ? and month(booking_date) = ? and year(booking_date) = ? group by customer_id;"
+                "SELECT customer_id, count(room_id) as NumberofRoom from booking where customer_id = ? and month(booking_date) = ? and year(booking_date) = ? group by customer_id;"
             oCommand.Parameters.Add("customer_id", OleDbType.Integer, 8)
             oCommand.Parameters.Add("month(booking_date)", OleDbType.Integer, 8)
             oCommand.Parameters.Add("year(booking_date)", OleDbType.Integer, 8)
@@ -224,7 +224,7 @@ Public Class ReportController
             Do While oDataReader.Read() = True
                 htData = New Hashtable
                 htData("CustomerId") = CStr(oDataReader("customer_id"))
-                htData("NumRoom") = CStr(oDataReader("NumRoom"))
+                htData("NumberofRoom") = CStr(oDataReader("NumberofRoom"))
                 lsData.Add(htData)
             Loop
 
@@ -431,7 +431,7 @@ Public Class ReportController
             lsKeys.Add("BookingDate")
         ElseIf reportIndex = 3 Then
             lsKeys.Add("CustomerId")
-            lsKeys.Add("NumRoom")
+            lsKeys.Add("NumberofRoom")
         ElseIf reportIndex = 4 Then
             lsKeys.Add("BookingId")
             lsKeys.Add("BookingDate")

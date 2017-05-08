@@ -94,7 +94,7 @@ Partial Class frmControlBreakReport
         Me.btnCreateReport1.Location = New System.Drawing.Point(117, 157)
         Me.btnCreateReport1.Name = "btnCreateReport1"
         Me.btnCreateReport1.Size = New System.Drawing.Size(100, 25)
-        Me.btnCreateReport1.TabIndex = 2
+        Me.btnCreateReport1.TabIndex = 11
         Me.btnCreateReport1.Text = "Create Report"
         Me.btnCreateReport1.UseVisualStyleBackColor = True
         '
@@ -115,7 +115,7 @@ Partial Class frmControlBreakReport
         Me.Button1.Location = New System.Drawing.Point(117, 154)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 25)
-        Me.Button1.TabIndex = 5
+        Me.Button1.TabIndex = 12
         Me.Button1.Text = "Create Report"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -123,7 +123,7 @@ Partial Class frmControlBreakReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 468)
+        Me.ClientSize = New System.Drawing.Size(360, 458)
         Me.Controls.Add(Me.gbCBRp2)
         Me.Controls.Add(Me.gbCBRp1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
